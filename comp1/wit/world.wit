@@ -1,0 +1,20 @@
+package newgyu:comp1
+
+interface types {
+    enum algorithm {
+        goblin,
+        orge
+    }
+
+    record seed {
+        value: u32,
+        algorithm: algorithm
+    }
+}
+
+world random-generator {
+    use types.{seed}
+    import types
+
+    export rand: func(seed: seed) -> u32
+}                
