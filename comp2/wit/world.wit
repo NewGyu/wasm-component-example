@@ -1,0 +1,8 @@
+package newgyu:comp2
+
+world hello {
+//    use newgyu:comp1/random-generator.{rand}
+//
+//    import rand
+    export hello-world: func() -> string
+}                

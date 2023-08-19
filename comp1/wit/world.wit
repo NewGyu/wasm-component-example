@@ -14,7 +14,6 @@ interface types {
 
 world random-generator {
     use types.{seed}
-    import types
 
     export rand: func(seed: seed) -> u32
 }                
