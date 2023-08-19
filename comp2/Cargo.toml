@@ -18,4 +18,4 @@ package = "newgyu:comp2"
 path = "wit"
 
 [package.metadata.component.dependencies]
-"newgyu:comp1" = { path = "../comp1/wit/world.wit" }
+"newgyu:comp1" = { path = "../comp1/target/wasm32-wasi/release/comp1.wasm" }
