@@ -1,0 +1,13 @@
+[package]
+name = "awesomeapp"
+version = "0.1.0"
+edition = "2021"
+
+[package.metadata.component]
+package = "newgyu:awesomeapp"
+
+[package.metadata.component.dependencies]
+"newgyu:comp2" = { path = "../comp2/target/wasm32-wasi/release/comp2.wasm" }
+
+[dependencies]
+cargo-component-bindings = { git = "https://github.com/bytecodealliance/cargo-component" }
