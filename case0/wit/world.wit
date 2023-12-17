@@ -1,0 +1,19 @@
+package component:case0;
+
+interface random {
+    enum algorithm {
+        goblin,
+        orge
+    }
+
+    record seed {
+        value: u32,
+        algorithm: algorithm
+    }
+
+    rand: func(seed: seed) -> u32;
+}
+
+world random-generator {
+    export random;
+}                
